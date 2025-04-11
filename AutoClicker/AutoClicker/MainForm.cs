@@ -10,6 +10,7 @@ namespace AutoClicker
         private const int HOTKEY_ID = 1;
         private const int MOD_NOREPEAT = 0x4000;
         private const int VK_F6 = 0x75;
+        private int count = 0;
 
         [DllImport("user32.dll")]
         private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
@@ -19,7 +20,7 @@ namespace AutoClicker
         public MainForm()
         {
             InitializeComponent();
-            TextBox[] arrayTextBox = new TextBox[] { hoursTextBox, minsTextBox, secondsTextBox, millisecendsTextBox, valueClickers, doubleClickDelay } ;
+            TextBox[] arrayTextBox = new TextBox[] { hoursTextBox, minsTextBox, secondsTextBox, millisecendsTextBox, valueClickers, doubleClickDelay };
             foreach (TextBox? textBox in arrayTextBox)
             {
                 textBox.KeyPress += TextBox_KeyPress;

@@ -57,8 +57,6 @@ namespace AutoClicker
             label2 = new Label();
             label3 = new Label();
             panel1 = new Panel();
-            label12 = new Label();
-            button1 = new Button();
             panel4 = new Panel();
             label11 = new Label();
             panel3.SuspendLayout();
@@ -351,8 +349,6 @@ namespace AutoClicker
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Controls.Add(label12);
-            panel1.Controls.Add(button1);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(stopButton);
             panel1.Controls.Add(panel2);
@@ -361,24 +357,6 @@ namespace AutoClicker
             panel1.Name = "panel1";
             panel1.Size = new Size(480, 290);
             panel1.TabIndex = 27;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(400, 264);
-            label12.Name = "label12";
-            label12.Size = new Size(44, 15);
-            label12.TabIndex = 28;
-            label12.Text = "label12";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(278, 259);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 27;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -421,7 +399,6 @@ namespace AutoClicker
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ResumeLayout(false);
@@ -457,8 +434,6 @@ namespace AutoClicker
         public Label label11;
         public ComboBox typeClickerBox;
         public Label label6;
-        public Label label12;
-        public Button button1;
         public Label doubleClickDelayText;
         public TextBox doubleClickDelay;
     }

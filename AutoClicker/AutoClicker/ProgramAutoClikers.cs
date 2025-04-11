@@ -108,15 +108,15 @@ namespace AutoClicker
 
             switch (index)
             {
-                case 0: // Левая кнопка
+                case 0:
                     down = MOUSEEVENTF_LEFTDOWN;
                     up = MOUSEEVENTF_LEFTUP;
                     break;
-                case 1: // Правая кнопка
+                case 1: 
                     down = MOUSEEVENTF_RIGHTDOWN;
                     up = MOUSEEVENTF_RIGHTUP;
                     break;
-                case 2: // Средняя кнопка
+                case 2: 
                     down = MOUSEEVENTF_MIDDLEDOWN;
                     up = MOUSEEVENTF_MIDDLEUP;
                     break;
